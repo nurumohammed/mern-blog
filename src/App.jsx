@@ -6,11 +6,13 @@ import Signout from "./pages/Signout";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import Header from "./components/Header";
+// import SideBar from "./components/SideBar";
 
 const App = () => {
   return (
     <BrowserRouter>
     <Header/>
+    {/* <SideBar/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<Aboute />} />
@@ -18,7 +20,7 @@ const App = () => {
         <Route path="sign-out" element={<Signout />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="projects" element={<Projects />} />
-      </Routes>
+      </Routes>                                                           
     </BrowserRouter>
   );
 };
