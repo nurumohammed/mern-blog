@@ -1,16 +1,17 @@
 import { Button, Navbar, TextInput } from "flowbite-react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Aheader = () => {
   return (
     <Navbar className="border-b-2  relative  ">
       <div className="flex max-lg:flex-col  md:flex-1 justify-between">
         <div className="grid grid-cols-1 [auto_1fr] text-sm sm:text-lg font-semibold dark:text-white">
-          <div className="px-2 py-2 text-2xl b-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-md text-">
-            PLAB-MS
-          </div>
+            <div className="px-2 py-2 text-2xl b-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-md text-">
+              PLAB-MS
+            </div>
+        
         </div>
         <div className="absolute right-2 top-2 lg:hidden pl-6">
           <Navbar.Toggle />
@@ -25,25 +26,12 @@ const Header = () => {
                 className="p-2"
               />
             </form>
-            <div className="flex-1 flex lg:items-center max-lg:flex-col max-lg:gap-y-5 lg:gap-x-5">
-              <NavLink to="/home">Home</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/projects">Projects</NavLink>
-            </div>
+           
             <div className="flex gap-x-2 lg:items-center justify-between p-2">
               <Button className="w-18 h-10" color="gray">
                 <FaMoon />
               </Button>
-              <NavLink to="/signup">
-                <Button
-                  className="w-18 h-10"
-                  color="gray"
-                  gradientDuoTone="purpleToBlue"
-                  outline
-                >
-                  SignIn
-                </Button>
-              </NavLink>
+
             </div>
           </Navbar.Collapse>
         </div>
@@ -52,4 +40,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Aheader;

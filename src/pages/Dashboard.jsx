@@ -1,11 +1,9 @@
 
-
 const Dashboard = () => {
   return (
-    <div>
-      
+    <div className="bg-white">
+    h;khpiulkhiuhiuhk9piuhj  
     </div>
   )
 }
-
 export default Dashboard

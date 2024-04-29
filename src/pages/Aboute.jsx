@@ -1,9 +1,8 @@
 
-
 const Aboute = () => {
   return (
     <div>
-      
+     hjl,jhvrijvu 
     </div>
   )
 }
