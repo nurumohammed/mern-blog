@@ -34,12 +34,12 @@ const Header = () => {
               <Button className="w-18 h-10" color="gray">
                 <FaMoon />
               </Button>
-              <NavLink to="/signup">
+              <NavLink to="/SignUp">
                 <Button
                   className="w-18 h-10"
-                  color="gray"
+                
                   gradientDuoTone="purpleToBlue"
-                  outline
+                 
                 >
                   SignIn
                 </Button>

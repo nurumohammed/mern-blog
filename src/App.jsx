@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 import Aheader from "./components/Admin page/Aheader";
+import SignIn from "./pages/SignIn";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
         {
           path: "signup",
           element: <SignUp />,
+        },
+        {
+          path: "signIn",
+          element: <SignIn/>,
         },
       ],
     },

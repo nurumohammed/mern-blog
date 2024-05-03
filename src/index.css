@@ -8,3 +8,13 @@
         @apply bg-blue-500 rounded-md p-2 text-white 
     }
 }
+@media screen and (max-width: 767px) {
+  /* Styles for mobile view */
+  .grid {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+  
+  .flex {
+    flex-direction: column; /* Stack image and form vertically */
+  }
+}
