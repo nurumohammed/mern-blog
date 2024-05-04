@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 import Aheader from "./components/Admin page/Aheader";
 import SignIn from "./pages/SignIn";
+import Footer from "./components/Footer";
 
 function App() {
   const router = createBrowserRouter([
@@ -37,7 +38,7 @@ function App() {
         },
         {
           path: "signIn",
-          element: <SignIn/>,
+          element: <SignIn />,
         },
       ],
     },
@@ -61,6 +62,7 @@ function GustLayout() {
     <div className="h-screen grid grid-rows-[auto_1fr]">
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }
